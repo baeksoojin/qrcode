@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
     <div class="main">
         <p>QR Code</p>
-        <button class="btn">Generate</button>
-        <img src="Images/default.png" alt="Your QR code will show here" class="code">
+        <form id="form" class="form">
+            name : <input id =user_name type="text" /><br>
+            address : <input id = user_add type="text" /><br>
+            phonenum : <input id=user_num type="text" /><br>
+            <button type="submit" class="btn" value="generate" >Generate</button>
+        </form>
+        
+        <img src="./image/defalut.png" alt="Your QR code will show here" class="code">
         <p id="note">qr code Generate(test)</p>
     </div>
     <div id="toast">Successfully Generated</div>
+    <img src="./image/defalut.png" alt="save this one" class="code_result">
     <script src="main.js"></script>
 </body>
 </html>
